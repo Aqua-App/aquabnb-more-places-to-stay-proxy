@@ -47,14 +47,14 @@ module.exports = {
     bundle: 'bundle.js',
   },
   service2: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3002',
-    bundle: 'app.js',
+    api: ['/homes/:id/reservation', '/homes/:id/listing'],
+    url: 'http://localhost:5000',
+    bundle: 'bundle.js',
   },
   service3: {
-    api: 'FIX_ME',
+    api: '/homes/:id/photos',
     url: 'http://localhost:3003',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
   service4: {
     api: 'FIX_ME',
