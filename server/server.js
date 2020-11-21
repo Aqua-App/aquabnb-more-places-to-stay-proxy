@@ -9,6 +9,11 @@ const app = express();
 app.use(morgan('dev'));
 app.use(express.static(PUBLIC_DIR));
 
+app.get('/homes/:id', (req, res) => {
+  console.log('hey hey hey');
+  res.sendFile(path.resolve('public', 'index.html'))
+});
+
 // Handling asset requests for webpack bundles by passing off requests to the bundles router
 app.use('/bundles', router.bundles);
 // Handling AJAX requests to the API by passing off requests to the api router
