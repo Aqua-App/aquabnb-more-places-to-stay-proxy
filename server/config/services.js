@@ -42,7 +42,7 @@
 
 module.exports = {
   service1: {
-    api: '/nearbyHomes/:id',
+    api: '/homes/:id/nearbyHomes',
     url: 'http://localhost:3001',
     bundle: 'bundle.js',
   },
