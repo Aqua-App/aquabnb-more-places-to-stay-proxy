@@ -57,8 +57,32 @@ module.exports = {
     bundle: 'bundle.js',
   },
   service4: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3004',
-    bundle: 'app.js',
+    api: ['/homes/:id/reviews', '/reviews/images/*'],
+    url: 'http://localhost:3010',
+    bundle: 'bundle.js',
   },
 };
+
+// module.exports = {
+//   service1: {
+//     api: '/homes/:id/nearbyHomes',
+//     url: 'http://localhost:3001',
+//     bundle: 'bundle.js',
+//   },
+//   service2: {
+//     api: ['/homes/:id/reservation', '/homes/:id/listing'],
+//     url: 'http://localhost:5000',
+//     bundle: 'bundle.js',
+//   },
+//   service3: {
+//     api: '/homes/:id/photos',
+//     url: 'http://localhost:3003',
+//     bundle: 'bundle.js',
+//   },
+//   service4: {
+//     api: ['/homes/:id/reviews', '/reviews/images/*'],
+//     url: 'http://localhost:3010',
+//     bundle: 'bundle.js',
+//   },
+// };
+
