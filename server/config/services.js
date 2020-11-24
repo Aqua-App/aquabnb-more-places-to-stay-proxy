@@ -43,24 +43,28 @@
 module.exports = {
   service1: {
     api: '/homes/:id/nearbyHomes',
+    // url: 'http://localhost:3001',
     url: 'http://ec2-54-67-3-176.us-west-1.compute.amazonaws.com:5001',
     bundle: 'bundle.js',
   },
-  // service2: {
-  //   api: ['/homes/:id/reservation', '/homes/:id/listing'],
-  //   url: 'http://localhost:5000',
-  //   bundle: 'bundle.js',
-  // },
-  // service3: {
-  //   api: '/homes/:id/photos',
-  //   url: 'http://localhost:3003',
-  //   bundle: 'bundle.js',
-  // },
-  // service4: {
-  //   api: ['/homes/:id/reviews', '/reviews/images/*'],
-  //   url: 'http://localhost:3010',
-  //   bundle: 'bundle.js',
-  // },
+  service2: {
+    api: ['/homes/:id/reservation', '/homes/:id/listing'],
+    // url: '',
+    url: 'http://localhost:5000',
+    bundle: 'bundle.js',
+  },
+  service3: {
+    api: '/homes/:id/photos',
+    // url: '',
+    url: 'http://localhost:3003',
+    bundle: 'bundle.js',
+  },
+  service4: {
+    api: ['/homes/:id/reviews', '/reviews/images/*'],
+    // url: '',
+    url: 'http://localhost:3010',
+    bundle: 'bundle.js',
+  },
 };
 
 // module.exports = {
