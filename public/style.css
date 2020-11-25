@@ -1,0 +1,53 @@
+.wrapper {
+  display: grid;
+  width: 1128px;
+  margin-left: 10px;
+  grid-template-areas:  "Header Header"
+                        "PhotosApp PhotosApp"
+                        "ScreenshotApp BookingApp"
+                        "ReviewsApp ReviewsApp"
+                        "NearbyApp NearbyApp";
+  grid-template-columns: 2fr 1fr;
+  row-gap: 15px;
+}
+
+#Header {
+  grid-area: Header;
+  justify-self: center;
+  align-self: start;
+}
+
+#PhotosApp {
+  grid-area: PhotosApp;
+  justify-self: center;
+  align-self: start;
+}
+
+#screenshot {
+  width: 100%;
+}
+
+#ScreenshotApp {
+  grid-area: ScreenshotApp;
+  justify-self: start;
+  align-self: start;
+}
+
+#BookingApp {
+  grid-area: BookingApp;
+  justify-self: end;
+  align-self: start;
+}
+
+#ReviewsApp {
+  grid-area: ReviewsApp;
+  justify-self: center;
+  align-self: start;
+  height: 934px;
+}
+
+#NearbyApp {
+  grid-area: NearbyApp;
+  justify-self: center;
+  align-self: start;
+}
