@@ -21,36 +21,30 @@
 
 </head>
 <body>
-  <div class="wrapper">
-    <div id="Header"></div>
-    <div id="PhotosApp"></div>
-    <div id="ScreenshotApp">
+  <div class="wrapper" style="display: grid;   width: 1128px;
+  margin-left: 10px; grid-template-areas:  'Header Header'
+  'PhotosApp PhotosApp'
+  'ScreenshotApp BookingApp'
+  'ReviewsApp ReviewsApp'
+  'NearbyApp NearbyApp';
+grid-template-columns: 2fr 1fr; row-gap: 15px;">
+    <div id="Header" style= "grid-area: Header"></div>
+    <div id="PhotosApp" style= "grid-area: PhotosApp"></div>
+    <!-- <div id="ScreenshotApp">
       <img id="screenshot" src="screenshot.png" alt="screenshot">
+    </div> -->
+    <div id="ScreenshotApp" style= "grid-area: ScreenshotApp">
+      <img id="screenshot" style= "width: 100%" src="https://aquabnblistingimages.s3-us-west-1.amazonaws.com/additional_FEC/Screen+Shot+2020-11-24+at+10.10.05+PM.png" alt="screenshot">
     </div>
-    <div id="BookingApp"></div>
-    <div id="ReviewsApp"></div>
-    <div id="NearbyApp"></div>
+    <div id="BookingApp" style= "grid-area: BookingApp"></div>
+    <div id="ReviewsApp" style= "grid-area: ReviewsApp; height: 934px;"></div>
+    <div id="NearbyApp" style= "grid-area: NearbyApp"></div>
   </div>
-
-  <!-- <div id="service1"></div> -->
-  <!-- <div id="service2"></div> -->
-  <!-- <div id="service3"></div>
-  <div id="service4"></div> -->
-  <!-- <script src="bundles/service1.js"></script> -->
 
   <script src="/bundles/service1.js"></script>
   <script src="/bundles/service2.js"></script>
   <script src="/bundles/service3.js"></script>
   <script src="/bundles/service4.js"></script>
-
-  <!-- <script>
-  window.ReactDOM.render(window.React.createElement(window.NearbyHomesApp), document.getElementById('service1'));
-  console.log('hello world!')
-  </script> -->
-  <!-- <script>
-  window.ReactDOMbooking.render(window.React.createElement(window.BookingApp), document.getElementById('service2'));
-  console.log('hello world for dan!')
-  </script> -->
 
 </body>
 </html>

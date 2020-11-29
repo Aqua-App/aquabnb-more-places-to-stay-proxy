@@ -44,13 +44,15 @@ module.exports = {
   service1: {
     api: '/homes/:id/nearbyHomes',
     // url: 'http://localhost:3001',
-    url: 'http://ec2-54-67-3-176.us-west-1.compute.amazonaws.com:5001',
+    url: 'http://13.57.39.187:3001/',
+    // url: '',
     bundle: 'bundle.js',
   },
   service2: {
     api: ['/homes/:id/reservation', '/homes/:id/listing'],
-    // url: '',
+    // url: 'http://18.191.192.150:5000/',
     url: 'http://localhost:5000',
+    // url: '',
     bundle: 'bundle.js',
   },
   service3: {

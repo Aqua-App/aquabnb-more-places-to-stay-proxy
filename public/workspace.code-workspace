@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../aquabnb-more-places-to-stay"
+		},
+		{
+			"path": "../../aquabnb-booking"
+		},
+		{
+			"path": "../../Aquabnb-photos"
+		},
+		{
+			"path": "../../aquabnb-reviews"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"emmet.showExpandedAbbreviation": "never",
+		"javascript.validate.enable": false
+	}
+}
