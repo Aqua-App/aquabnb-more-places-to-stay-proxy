@@ -43,52 +43,22 @@
 module.exports = {
   service1: {
     api: '/homes/:id/nearbyHomes',
-    // url: 'http://localhost:3001',
-    url: 'http://13.57.39.187:3001/',
-    // url: '',
+    url: 'http://13.52.187.109:3001/',
     bundle: 'bundle.js',
   },
   service2: {
     api: ['/homes/:id/reservation', '/homes/:id/listing'],
-    // url: 'http://18.191.192.150:5000/',
-    url: 'http://localhost:5000',
-    // url: '',
+    url: 'http://18.191.192.150:5000/',
     bundle: 'bundle.js',
   },
   service3: {
     api: '/homes/:id/photos',
-    // url: '',
-    url: 'http://localhost:3003',
+    url: 'http://13.58.166.2:5001/',
     bundle: 'bundle.js',
   },
   service4: {
     api: ['/homes/:id/reviews', '/reviews/images/*'],
-    // url: '',
-    url: 'http://localhost:3010',
+    url: 'http://3.16.180.16:3010/',
     bundle: 'bundle.js',
   },
 };
-
-// module.exports = {
-//   service1: {
-//     api: '/homes/:id/nearbyHomes',
-//     url: 'http://localhost:3001',
-//     bundle: 'bundle.js',
-//   },
-//   service2: {
-//     api: ['/homes/:id/reservation', '/homes/:id/listing'],
-//     url: 'http://localhost:5000',
-//     bundle: 'bundle.js',
-//   },
-//   service3: {
-//     api: '/homes/:id/photos',
-//     url: 'http://localhost:3003',
-//     bundle: 'bundle.js',
-//   },
-//   service4: {
-//     api: ['/homes/:id/reviews', '/reviews/images/*'],
-//     url: 'http://localhost:3010',
-//     bundle: 'bundle.js',
-//   },
-// };
-
